@@ -216,7 +216,14 @@ class _SingupUiState extends State<SingupUi> {
                       width: 5,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginUi(),
+                          ),
+                        );
+                      },
                       child: Text(
                         "LOGIN",
                         style: TextStyle(

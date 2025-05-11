@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dti_project/views/singup_ui.dart';
 
 class LoginUi extends StatefulWidget {
   const LoginUi({super.key});
@@ -196,7 +197,14 @@ class _LoginUiState extends State<LoginUi> {
                       width: 5,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SingupUi(),
+                          ),
+                        );
+                      },
                       child: Text(
                         "Singup",
                         style: TextStyle(
